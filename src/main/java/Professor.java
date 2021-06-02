@@ -1,6 +1,19 @@
 public class Professor extends Pessoa {
+
+    public static final int QTD_LIVROS = 5;
+    private static final int TEMPO_EMPRESTIMO_DIAS = 20;
+
     public Professor(String nome, long matricula, String email) {
         super(nome, matricula, email);
+    }
+
+    public Professor() {
+        super();
+    }
+
+    @Override
+    public int getPrazoDevolucaoDias() {
+        return TEMPO_EMPRESTIMO_DIAS;
     }
 
     @Override

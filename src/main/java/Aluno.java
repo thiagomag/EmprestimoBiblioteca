@@ -1,6 +1,18 @@
 public class Aluno extends Pessoa {
+    public static final int QTD_LIVROS = 3;
+    private static final int TEMPO_EMPRESTIMO_DIAS = 10;
+
     public Aluno(String nome, long matricula, String email) {
         super(nome, matricula, email);
+    }
+
+    public Aluno() {
+        super();
+    }
+
+    @Override
+    public int getPrazoDevolucaoDias() {
+        return TEMPO_EMPRESTIMO_DIAS;
     }
 
     @Override

@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class Livros {
-    private long isbn;
-    private String autor;
-    private String titulo;
-    private String editora;
+    protected Long isbn;
+    protected String autor;
+    protected String titulo;
+    protected String editora;
 
 
     public Livros(long isbn, String autor, String titulo, String editora) {
